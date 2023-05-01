@@ -1,0 +1,77 @@
+<nb-card>
+        <div class="col-md-12">
+          <nb-card>
+            <nb-card-header>Nuevo Operador</nb-card-header>
+            <nb-card-body>
+            <form class="create-form" [formGroup]="exampleForm" novalidate (ngSubmit)="onSubmit(exampleForm.value)">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inputFirstName" class="label">Nombre</label>
+                    <input type="text" nbInput fullWidth class="form-control" formControlName="nombre" placeholder="Nombre">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inputLastName" class="label">Apellido Paterno</label>
+                    <input type="text" nbInput fullWidth class="form-control" formControlName="apellidoP" placeholder="Apellido Paterno">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inputEmail" class="label">Apellido Materno</label>
+                    <input type="email" nbInput fullWidth class="form-control" formControlName="apellidoM" placeholder="Apellido Materno">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inputWebsite" class="label">RFC</label>
+                    <input type="text" nbInput fullWidth class="form-control" formControlName="rfc" placeholder="RFC">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inputEmail" class="label">Curp</label>
+                    <input type="email" nbInput fullWidth class="form-control" formControlName="curp" placeholder="Curp">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inputWebsite" class="label">Licencia</label>
+                    <input type="text" nbInput fullWidth class="form-control" formControlName="licencia" placeholder="Licencia">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inputEmail" class="label">Domicilio</label>
+                    <input type="email" nbInput fullWidth class="form-control" formControlName="domicilio" placeholder="Domicilio">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inputWebsite" class="label">Unidad</label>
+                    <input type="text" nbInput fullWidth class="form-control" formControlName="unidad" placeholder="Unidad">
+                  </div>
+                </div>
+              </div>
+              <nb-card-footer>
+                <button class="cancel" nbButton status="danger" outline (click)="cancel()">Cancelar</button>
+                <div class="space"></div>
+                <button nbButton class="submit-button"  status="success" outline type="submit">Guardar</button>
+            </nb-card-footer>
+            
+            </form>
+            </nb-card-body>
+          </nb-card>
+        </div>
+  </nb-card>
+  

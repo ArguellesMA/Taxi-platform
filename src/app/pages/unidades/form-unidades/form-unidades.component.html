@@ -1,0 +1,46 @@
+<nb-card>
+    <div class="col-md-12">
+      <nb-card>
+        <nb-card-header>Nueva Unidad</nb-card-header>
+        <nb-card-body>
+        <form class="create-form" [formGroup]="exampleForm" novalidate (ngSubmit)="onSubmit(exampleForm.value)">
+         
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label for="inputFirstName" class="label">Marca</label>
+                <input type="text" nbInput fullWidth class="form-control" formControlName="marca" placeholder="Marca">
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label for="inputLastName" class="label">Modelo</label>
+                <input type="text" nbInput fullWidth class="form-control" formControlName="modelo" placeholder="Modelo">
+              </div>
+            </div>
+
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label for="inputEmail" class="label">Numero de seguro</label>
+                <input type="email" nbInput fullWidth class="form-control" formControlName="numSeguro" placeholder="Numero seguro">
+              </div>
+            </div>
+
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label for="inputWebsite" class="label">Placa</label>
+                <input type="text" nbInput fullWidth class="form-control" formControlName="placa" placeholder="Placa">
+              </div>
+            </div>
+
+
+          <nb-card-footer>
+            <button class="cancel" nbButton status="danger" outline (click)="cancel()">Cancelar</button>
+            <div class="space"></div>
+            <button nbButton class="submit-button"  status="success" outline type="submit">Guardar</button>
+        </nb-card-footer>
+        
+        </form>
+        </nb-card-body>
+      </nb-card>
+    </div>
+</nb-card>

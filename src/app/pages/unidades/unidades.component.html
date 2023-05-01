@@ -1,0 +1,15 @@
+<nb-card>
+    <nb-card-header>
+      Unidades
+    </nb-card-header>
+  
+    <nb-card-body>
+      
+      <div class="col-md-12 col-lg-6 col-xxxl-3">
+          <button nbButton status="primary" outline (click)="open3()">Nueva Unidad</button>
+      </div><br>
+  
+      <ng2-smart-table [settings]="settings" [source]="unidades" (deleteConfirm)="onDeleteConfirm($event)">
+      </ng2-smart-table>
+    </nb-card-body>
+  </nb-card>
